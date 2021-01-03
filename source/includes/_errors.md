@@ -1,6 +1,6 @@
 # Errors
 
-The Deepnews.ai API will return the following error codes.
+The Deepnews API will return the following error codes.
 
 
 Error Code | Meaning
