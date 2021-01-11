@@ -34,18 +34,15 @@ wget --no-check-certificate --quiet \
   --method POST \
   --timeout=0 \
   --header '' \
-   'http://0.0.0.0:5000/score?key=API_KEY&body=BODY'
+   'https://api.deepnews.ai/score?key=API_KEY&body=BODY'
 ```
 
 ```python
 import requests
 
-url = "http://0.0.0.0:5000/score?key=API_KEY&body=BODY"
+url = "https://api.deepnews.ai/score?key=API_KEY&body=BODY"
 
-payload={}
-headers = {}
-
-response = requests.request("POST", url, headers=headers, data=payload)
+response = requests.request("POST", url)
 
 print(response.text)
 ```
@@ -54,7 +51,7 @@ print(response.text)
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://0.0.0.0:5000/score?key=API_KEY&body=BODY',
+  CURLOPT_URL => 'https://api.deepnews.ai/score?key=API_KEY&body=BODY',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -90,18 +87,15 @@ wget --no-check-certificate --quiet \
   --method POST \
   --timeout=0 \
   --header '' \
-   'http://0.0.0.0:5000/score?key=API_KEY&url=URL'
+   'https://api.deepnews.ai/score?key=API_KEY&url=URL'
 ```
 
 ```python
 import requests
 
-url = "http://0.0.0.0:5000/score?key=API_KEY&url=URL"
+url = "https://api.deepnews.ai/score?key=API_KEY&url=URL"
 
-payload={}
-headers = {}
-
-response = requests.request("POST", url, headers=headers, data=payload)
+response = requests.request("POST", url)
 
 print(response.text)
 ```
@@ -110,7 +104,7 @@ print(response.text)
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://0.0.0.0:5000/score?key=API_KEY&url=URL',
+  CURLOPT_URL => 'https://api.deepnews.ai/score?key=API_KEY&url=URL',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
